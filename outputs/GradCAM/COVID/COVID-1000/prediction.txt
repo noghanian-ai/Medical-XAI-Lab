@@ -1,0 +1,4 @@
+{
+    "prediction": "COVID",
+    "confidence": 96.4553713798523
+}

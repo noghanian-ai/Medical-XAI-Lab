@@ -1,0 +1,20 @@
+# Medical-XAI-Lab
+# Explainable AI for Chest X-ray Classification
+
+tensorflow==2.15.0
+tensorflow-intel==2.15.0
+
+keras==2.15.0
+
+numpy==1.26.4
+opencv-python==5.0.0.93
+pillow==12.3.0
+
+matplotlib==3.10.9
+
+scikit-learn==1.7.2
+scipy==1.15.3
+
+pandas==2.3.3
+
+imutils==0.5.4
