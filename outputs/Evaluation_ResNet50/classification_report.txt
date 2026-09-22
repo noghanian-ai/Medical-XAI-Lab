@@ -1,0 +1,9 @@
+              precision    recall  f1-score   support
+
+       COVID     0.9628    0.9050    0.9330       200
+Lung_Opacity     0.9130    0.9450    0.9287       200
+      Normal     0.9659    0.9900    0.9778       200
+
+    accuracy                         0.9467       600
+   macro avg     0.9472    0.9467    0.9465       600
+weighted avg     0.9472    0.9467    0.9465       600
