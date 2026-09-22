@@ -1,0 +1,32 @@
+{
+    "dataset": {
+        "validation_images": 600,
+        "classes": 3,
+        "class_names": [
+            "COVID",
+            "Lung_Opacity",
+            "Normal"
+        ]
+    },
+    "models": {
+        "Custom_VGG16_like_CNN": {
+            "description": "Custom VGG16-like CNN trained from scratch",
+            "metrics": {
+                "accuracy": 0.93,
+                "precision": 0.9351900669673281,
+                "recall": 0.93,
+                "f1_score": 0.9302288378037389
+            }
+        },
+        "ResNet50_Transfer_Learning": {
+            "description": "ResNet50 pretrained on ImageNet with frozen backbone",
+            "metrics": {
+                "model": "ResNet50",
+                "accuracy": 0.9466666666666667,
+                "precision": 0.9472210314147544,
+                "recall": 0.9466666666666667,
+                "f1_score": 0.9465047990821188
+            }
+        }
+    }
+}
