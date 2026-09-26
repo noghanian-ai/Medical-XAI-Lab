@@ -1,0 +1,563 @@
+{
+  "description": "Paired comparison of deletion-test AUC values between Grad-CAM and Score-CAM.",
+  "difference_definition": "Score-CAM AUC minus Grad-CAM AUC. Positive values indicate higher Score-CAM AUC; negative values indicate higher Grad-CAM AUC.",
+  "overall": {
+    "gradcam_auc": {
+      "n": 30,
+      "mean": 46.62283228238424,
+      "median": 38.707149505615234,
+      "std": 26.092950227487414,
+      "min": 5.380263805389404,
+      "max": 97.00554656982422
+    },
+    "scorecam_auc": {
+      "n": 30,
+      "mean": 49.40193611780803,
+      "median": 45.89798545837402,
+      "std": 29.395472946923874,
+      "min": 5.903965950012207,
+      "max": 93.62165832519531
+    },
+    "difference_scorecam_minus_gradcam": {
+      "n": 30,
+      "mean": 2.7791038354237876,
+      "median": 1.9623186588287354,
+      "std": 16.013064268210385,
+      "min": -21.092796325683594,
+      "max": 50.513221740722656
+    },
+    "scorecam_higher_count": 17,
+    "gradcam_higher_count": 13,
+    "equal_count": 0
+  },
+  "correctly_classified_only": {
+    "n": 29,
+    "gradcam_auc": {
+      "n": 29,
+      "mean": 47.797849540052745,
+      "median": 39.386940002441406,
+      "std": 25.734385322593162,
+      "min": 5.380263805389404,
+      "max": 97.00554656982422
+    },
+    "scorecam_auc": {
+      "n": 29,
+      "mean": 50.90186612359409,
+      "median": 47.390995025634766,
+      "std": 28.723685935417947,
+      "min": 7.7925872802734375,
+      "max": 93.62165832519531
+    },
+    "difference_scorecam_minus_gradcam": {
+      "n": 29,
+      "mean": 3.104016583541344,
+      "median": 2.412323474884033,
+      "std": 16.195550728069858,
+      "min": -21.092796325683594,
+      "max": 50.513221740722656
+    },
+    "scorecam_higher_count": 17,
+    "gradcam_higher_count": 12,
+    "equal_count": 0
+  },
+  "class_specific": {
+    "COVID": {
+      "n": 10,
+      "gradcam_auc": {
+        "n": 10,
+        "mean": 67.01013793945313,
+        "median": 71.64677810668945,
+        "std": 22.117829958975573,
+        "min": 36.84968185424805,
+        "max": 97.00554656982422
+      },
+      "scorecam_auc": {
+        "n": 10,
+        "mean": 76.36028366088867,
+        "median": 88.9839096069336,
+        "std": 22.992576969066576,
+        "min": 37.97478485107422,
+        "max": 93.62165832519531
+      },
+      "difference_scorecam_minus_gradcam": {
+        "n": 10,
+        "mean": 9.350145721435547,
+        "median": 6.871025085449219,
+        "std": 19.25036371768374,
+        "min": -20.696884155273438,
+        "max": 50.513221740722656
+      },
+      "scorecam_higher_count": 8,
+      "gradcam_higher_count": 2,
+      "equal_count": 0
+    },
+    "Lung_Opacity": {
+      "n": 10,
+      "gradcam_auc": {
+        "n": 10,
+        "mean": 46.82235155105591,
+        "median": 36.592275619506836,
+        "std": 24.217827597535884,
+        "min": 12.547331809997559,
+        "max": 88.23190307617188
+      },
+      "scorecam_auc": {
+        "n": 10,
+        "mean": 47.388187408447266,
+        "median": 50.851613998413086,
+        "std": 24.287667158592654,
+        "min": 5.903965950012207,
+        "max": 90.0501937866211
+      },
+      "difference_scorecam_minus_gradcam": {
+        "n": 10,
+        "mean": 0.5658358573913574,
+        "median": 2.0138864517211914,
+        "std": 17.234064731814225,
+        "min": -21.092796325683594,
+        "max": 20.64324951171875
+      },
+      "scorecam_higher_count": 5,
+      "gradcam_higher_count": 5,
+      "equal_count": 0
+    },
+    "Normal": {
+      "n": 10,
+      "gradcam_auc": {
+        "n": 10,
+        "mean": 26.036007356643676,
+        "median": 24.36454200744629,
+        "std": 13.614172806073178,
+        "min": 5.380263805389404,
+        "max": 45.859901428222656
+      },
+      "scorecam_auc": {
+        "n": 10,
+        "mean": 24.457337284088133,
+        "median": 22.842309951782227,
+        "std": 12.742622036690047,
+        "min": 7.7925872802734375,
+        "max": 44.40497589111328
+      },
+      "difference_scorecam_minus_gradcam": {
+        "n": 10,
+        "mean": -1.578670072555542,
+        "median": -1.7459287643432617,
+        "std": 9.17211823379389,
+        "min": -19.14983558654785,
+        "max": 13.994344711303711
+      },
+      "scorecam_higher_count": 4,
+      "gradcam_higher_count": 6,
+      "equal_count": 0
+    }
+  },
+  "largest_positive_differences": [
+    {
+      "filename": "COVID-826.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 38.027359,
+      "scorecam_auc": 88.540581,
+      "difference_scorecam_minus_gradcam": 50.513222
+    },
+    {
+      "filename": "COVID-828.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 71.051048,
+      "scorecam_auc": 93.08667,
+      "difference_scorecam_minus_gradcam": 22.035622
+    },
+    {
+      "filename": "COVID-989.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 72.242508,
+      "scorecam_auc": 93.621658,
+      "difference_scorecam_minus_gradcam": 21.37915
+    },
+    {
+      "filename": "Lung_Opacity-951.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 69.406944,
+      "scorecam_auc": 90.050194,
+      "difference_scorecam_minus_gradcam": 20.64325
+    },
+    {
+      "filename": "Lung_Opacity-939.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 35.019051,
+      "scorecam_auc": 53.618263,
+      "difference_scorecam_minus_gradcam": 18.599213
+    }
+  ],
+  "largest_negative_differences": [
+    {
+      "filename": "Lung_Opacity-855.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 88.231903,
+      "scorecam_auc": 67.139107,
+      "difference_scorecam_minus_gradcam": -21.092796
+    },
+    {
+      "filename": "Lung_Opacity-908.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 36.358612,
+      "scorecam_auc": 15.323791,
+      "difference_scorecam_minus_gradcam": -21.034822
+    },
+    {
+      "filename": "COVID-857.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 58.671669,
+      "scorecam_auc": 37.974785,
+      "difference_scorecam_minus_gradcam": -20.696884
+    },
+    {
+      "filename": "Normal-966.png",
+      "class": "Normal",
+      "correct": true,
+      "gradcam_auc": 39.38694,
+      "scorecam_auc": 20.237104,
+      "difference_scorecam_minus_gradcam": -19.149836
+    },
+    {
+      "filename": "Lung_Opacity-823.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 64.637413,
+      "scorecam_auc": 48.084965,
+      "difference_scorecam_minus_gradcam": -16.552448
+    }
+  ],
+  "largest_absolute_differences": [
+    {
+      "filename": "COVID-826.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 38.027359,
+      "scorecam_auc": 88.540581,
+      "difference_scorecam_minus_gradcam": 50.513222
+    },
+    {
+      "filename": "COVID-828.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 71.051048,
+      "scorecam_auc": 93.08667,
+      "difference_scorecam_minus_gradcam": 22.035622
+    },
+    {
+      "filename": "COVID-989.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 72.242508,
+      "scorecam_auc": 93.621658,
+      "difference_scorecam_minus_gradcam": 21.37915
+    },
+    {
+      "filename": "Lung_Opacity-855.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 88.231903,
+      "scorecam_auc": 67.139107,
+      "difference_scorecam_minus_gradcam": -21.092796
+    },
+    {
+      "filename": "Lung_Opacity-908.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 36.358612,
+      "scorecam_auc": 15.323791,
+      "difference_scorecam_minus_gradcam": -21.034822
+    },
+    {
+      "filename": "COVID-857.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 58.671669,
+      "scorecam_auc": 37.974785,
+      "difference_scorecam_minus_gradcam": -20.696884
+    },
+    {
+      "filename": "Lung_Opacity-951.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 69.406944,
+      "scorecam_auc": 90.050194,
+      "difference_scorecam_minus_gradcam": 20.64325
+    },
+    {
+      "filename": "Normal-966.png",
+      "class": "Normal",
+      "correct": true,
+      "gradcam_auc": 39.38694,
+      "scorecam_auc": 20.237104,
+      "difference_scorecam_minus_gradcam": -19.149836
+    },
+    {
+      "filename": "Lung_Opacity-939.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 35.019051,
+      "scorecam_auc": 53.618263,
+      "difference_scorecam_minus_gradcam": 18.599213
+    },
+    {
+      "filename": "Lung_Opacity-807.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 36.464695,
+      "scorecam_auc": 53.764694,
+      "difference_scorecam_minus_gradcam": 17.299999
+    }
+  ],
+  "all_pairs": [
+    {
+      "filename": "COVID-806.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 80.807838,
+      "scorecam_auc": 92.265602,
+      "difference_scorecam_minus_gradcam": 11.457764
+    },
+    {
+      "filename": "COVID-826.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 38.027359,
+      "scorecam_auc": 88.540581,
+      "difference_scorecam_minus_gradcam": 50.513222
+    },
+    {
+      "filename": "COVID-828.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 71.051048,
+      "scorecam_auc": 93.08667,
+      "difference_scorecam_minus_gradcam": 22.035622
+    },
+    {
+      "filename": "COVID-835.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 36.849682,
+      "scorecam_auc": 43.990559,
+      "difference_scorecam_minus_gradcam": 7.140877
+    },
+    {
+      "filename": "COVID-857.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 58.671669,
+      "scorecam_auc": 37.974785,
+      "difference_scorecam_minus_gradcam": -20.696884
+    },
+    {
+      "filename": "COVID-862.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 97.005547,
+      "scorecam_auc": 89.427238,
+      "difference_scorecam_minus_gradcam": -7.578308
+    },
+    {
+      "filename": "COVID-870.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 85.592644,
+      "scorecam_auc": 86.729172,
+      "difference_scorecam_minus_gradcam": 1.136528
+    },
+    {
+      "filename": "COVID-963.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 88.333817,
+      "scorecam_auc": 89.84613,
+      "difference_scorecam_minus_gradcam": 1.512314
+    },
+    {
+      "filename": "COVID-988.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 41.519268,
+      "scorecam_auc": 48.120441,
+      "difference_scorecam_minus_gradcam": 6.601173
+    },
+    {
+      "filename": "COVID-989.png",
+      "class": "COVID",
+      "correct": true,
+      "gradcam_auc": 72.242508,
+      "scorecam_auc": 93.621658,
+      "difference_scorecam_minus_gradcam": 21.37915
+    },
+    {
+      "filename": "Lung_Opacity-807.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 36.464695,
+      "scorecam_auc": 53.764694,
+      "difference_scorecam_minus_gradcam": 17.299999
+    },
+    {
+      "filename": "Lung_Opacity-808.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 21.053736,
+      "scorecam_auc": 34.738121,
+      "difference_scorecam_minus_gradcam": 13.684385
+    },
+    {
+      "filename": "Lung_Opacity-822.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 67.783974,
+      "scorecam_auc": 57.867779,
+      "difference_scorecam_minus_gradcam": -9.916195
+    },
+    {
+      "filename": "Lung_Opacity-823.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 64.637413,
+      "scorecam_auc": 48.084965,
+      "difference_scorecam_minus_gradcam": -16.552448
+    },
+    {
+      "filename": "Lung_Opacity-855.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 88.231903,
+      "scorecam_auc": 67.139107,
+      "difference_scorecam_minus_gradcam": -21.092796
+    },
+    {
+      "filename": "Lung_Opacity-908.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 36.358612,
+      "scorecam_auc": 15.323791,
+      "difference_scorecam_minus_gradcam": -21.034822
+    },
+    {
+      "filename": "Lung_Opacity-939.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 35.019051,
+      "scorecam_auc": 53.618263,
+      "difference_scorecam_minus_gradcam": 18.599213
+    },
+    {
+      "filename": "Lung_Opacity-951.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 69.406944,
+      "scorecam_auc": 90.050194,
+      "difference_scorecam_minus_gradcam": 20.64325
+    },
+    {
+      "filename": "Lung_Opacity-973.png",
+      "class": "Lung_Opacity",
+      "correct": false,
+      "gradcam_auc": 12.547332,
+      "scorecam_auc": 5.903966,
+      "difference_scorecam_minus_gradcam": -6.643366
+    },
+    {
+      "filename": "Lung_Opacity-989.png",
+      "class": "Lung_Opacity",
+      "correct": true,
+      "gradcam_auc": 36.719856,
+      "scorecam_auc": 47.390995,
+      "difference_scorecam_minus_gradcam": 10.671139
+    },
+    {
+      "filename": "Normal-806.png",
+      "class": "Normal",
+      "correct": true,
+      "gradcam_auc": 35.395447,
+      "scorecam_auc": 27.53499,
+      "difference_scorecam_minus_gradcam": -7.860456
+    },
+    {
+      "filename": "Normal-850.png",
+      "class": "Normal",
+      "correct": true,
+      "gradcam_auc": 40.020088,
+      "scorecam_auc": 43.333687,
+      "difference_scorecam_minus_gradcam": 3.313599
+    },
+    {
+      "filename": "Normal-859.png",
+      "class": "Normal",
+      "correct": true,
+      "gradcam_auc": 18.162043,
+      "scorecam_auc": 32.156387,
+      "difference_scorecam_minus_gradcam": 13.994345
+    },
+    {
+      "filename": "Normal-929.png",
+      "class": "Normal",
+      "correct": true,
+      "gradcam_auc": 5.380264,
+      "scorecam_auc": 7.792587,
+      "difference_scorecam_minus_gradcam": 2.412323
+    },
+    {
+      "filename": "Normal-939.png",
+      "class": "Normal",
+      "correct": true,
+      "gradcam_auc": 25.664316,
+      "scorecam_auc": 22.596676,
+      "difference_scorecam_minus_gradcam": -3.06764
+    },
+    {
+      "filename": "Normal-943.png",
+      "class": "Normal",
+      "correct": true,
+      "gradcam_auc": 16.202387,
+      "scorecam_auc": 23.087944,
+      "difference_scorecam_minus_gradcam": 6.885557
+    },
+    {
+      "filename": "Normal-954.png",
+      "class": "Normal",
+      "correct": true,
+      "gradcam_auc": 23.064768,
+      "scorecam_auc": 14.242033,
+      "difference_scorecam_minus_gradcam": -8.822735
+    },
+    {
+      "filename": "Normal-966.png",
+      "class": "Normal",
+      "correct": true,
+      "gradcam_auc": 39.38694,
+      "scorecam_auc": 20.237104,
+      "difference_scorecam_minus_gradcam": -19.149836
+    },
+    {
+      "filename": "Normal-979.png",
+      "class": "Normal",
+      "correct": true,
+      "gradcam_auc": 11.22392,
+      "scorecam_auc": 9.186988,
+      "difference_scorecam_minus_gradcam": -2.036932
+    },
+    {
+      "filename": "Normal-983.png",
+      "class": "Normal",
+      "correct": true,
+      "gradcam_auc": 45.859901,
+      "scorecam_auc": 44.404976,
+      "difference_scorecam_minus_gradcam": -1.454926
+    }
+  ]
+}

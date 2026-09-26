@@ -1,0 +1,140 @@
+{
+    "model": "ResNet50 Fine-Tuned",
+    "dataset": {
+        "total_images": 30,
+        "classes": {
+            "COVID": 10,
+            "Lung_Opacity": 10,
+            "Normal": 10
+        }
+    },
+    "mask_percentages": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+    ],
+    "Grad-CAM": {
+        "n_images": 30,
+        "mean_auc": 68.62893676757812,
+        "std_auc": 28.624591827392578,
+        "min_auc": 3.843484401702881,
+        "max_auc": 99.99506378173828,
+        "n_correct_predictions": 29,
+        "n_incorrect_predictions": 1,
+        "mean_auc_correct_only": 70.86292266845703,
+        "std_auc_correct_only": 26.335588455200195
+    },
+    "Score-CAM": {
+        "n_images": 30,
+        "mean_auc": 72.66744232177734,
+        "std_auc": 24.165571212768555,
+        "min_auc": 9.648843765258789,
+        "max_auc": 99.99266052246094,
+        "n_correct_predictions": 29,
+        "n_incorrect_predictions": 1,
+        "mean_auc_correct_only": 74.84049224853516,
+        "std_auc_correct_only": 21.40342140197754
+    },
+    "mean_curve": {
+        "Grad-CAM": {
+            "0": {
+                "mean_confidence": 0.33333539962768555,
+                "std_confidence": 0.479006826877594
+            },
+            "10": {
+                "mean_confidence": 0.38629406690597534,
+                "std_confidence": 0.47341835498809814
+            },
+            "20": {
+                "mean_confidence": 0.5894124507904053,
+                "std_confidence": 0.4646883010864258
+            },
+            "30": {
+                "mean_confidence": 0.617962658405304,
+                "std_confidence": 0.4466557204723358
+            },
+            "40": {
+                "mean_confidence": 0.6761192679405212,
+                "std_confidence": 0.4411240220069885
+            },
+            "50": {
+                "mean_confidence": 0.7544146180152893,
+                "std_confidence": 0.38332226872444153
+            },
+            "60": {
+                "mean_confidence": 0.7507912516593933,
+                "std_confidence": 0.3907926082611084
+            },
+            "70": {
+                "mean_confidence": 0.778390109539032,
+                "std_confidence": 0.3827735185623169
+            },
+            "80": {
+                "mean_confidence": 0.8281697630882263,
+                "std_confidence": 0.3483579158782959
+            },
+            "90": {
+                "mean_confidence": 0.8377892971038818,
+                "std_confidence": 0.3106750547885895
+            },
+            "100": {
+                "mean_confidence": 0.9537651538848877,
+                "std_confidence": 0.10489611327648163
+            }
+        },
+        "Score-CAM": {
+            "0": {
+                "mean_confidence": 0.33333539962768555,
+                "std_confidence": 0.479006826877594
+            },
+            "10": {
+                "mean_confidence": 0.3622381091117859,
+                "std_confidence": 0.4690213203430176
+            },
+            "20": {
+                "mean_confidence": 0.5066019892692566,
+                "std_confidence": 0.4519762694835663
+            },
+            "30": {
+                "mean_confidence": 0.6994489431381226,
+                "std_confidence": 0.4215479791164398
+            },
+            "40": {
+                "mean_confidence": 0.7808001041412354,
+                "std_confidence": 0.40050482749938965
+            },
+            "50": {
+                "mean_confidence": 0.780317485332489,
+                "std_confidence": 0.3830840289592743
+            },
+            "60": {
+                "mean_confidence": 0.8218810558319092,
+                "std_confidence": 0.332599014043808
+            },
+            "70": {
+                "mean_confidence": 0.8858287334442139,
+                "std_confidence": 0.29321351647377014
+            },
+            "80": {
+                "mean_confidence": 0.8671373128890991,
+                "std_confidence": 0.31110721826553345
+            },
+            "90": {
+                "mean_confidence": 0.9189397096633911,
+                "std_confidence": 0.2088564783334732
+            },
+            "100": {
+                "mean_confidence": 0.9537651538848877,
+                "std_confidence": 0.10489611327648163
+            }
+        }
+    }
+}

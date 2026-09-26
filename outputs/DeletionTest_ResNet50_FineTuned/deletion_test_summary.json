@@ -1,0 +1,24 @@
+{
+    "model": "ResNet50 Fine-Tuned",
+    "target_image": "C:\\Users\\manot\\OneDrive\\Desktop\\Medical-XAI-Lab\\images\\Lung_Opacity\\Lung_Opacity-1000.png",
+    "target_class": "Lung_Opacity",
+    "target_class_index": 1,
+    "original_target_confidence": 0.9999997615814209,
+    "gradcam_auc": 62.92251205444336,
+    "scorecam_auc": 65.86627960205078,
+    "deletion_percentages": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+    ],
+    "masking_baseline": "per-channel image mean",
+    "note": "Importance maps were derived from the saved heatmap PNG visualizations rather than raw XAI arrays."
+}

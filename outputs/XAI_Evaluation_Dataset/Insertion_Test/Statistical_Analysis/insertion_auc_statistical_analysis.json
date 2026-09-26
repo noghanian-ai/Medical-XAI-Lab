@@ -1,0 +1,605 @@
+{
+  "analysis": {
+    "description": "Paired comparison of Grad-CAM and Score-CAM deletion-test AUC values.",
+    "auc_interpretation": "Lower deletion AUC indicates faster confidence reduction under the specified masking procedure. This metric alone does not establish superiority of one explanation method.",
+    "difference_definition": "Score-CAM minus Grad-CAM",
+    "bootstrap_iterations": 10000,
+    "bootstrap_seed": 42,
+    "confidence_level": 0.95
+  },
+  "dataset": {
+    "total_paired_images": 30,
+    "correctly_classified_images": 29,
+    "incorrectly_classified_images": 1
+  },
+  "all_30_images": {
+    "n": 30,
+    "mean_auc": {
+      "Grad-CAM": 68.6289380868276,
+      "Score-CAM": 72.66743920644124
+    },
+    "median_auc": {
+      "Grad-CAM": 73.93778610229492,
+      "Score-CAM": 78.13584518432617
+    },
+    "paired_difference": {
+      "definition": "Score-CAM minus Grad-CAM",
+      "mean": 4.038501119613647,
+      "median": -0.085723876953125,
+      "std": 19.920595842534254,
+      "bootstrap_95_percent_ci": {
+        "lower": -2.390716585318247,
+        "upper": 11.380653763214745
+      }
+    },
+    "paired_t_test": {
+      "t_statistic": 1.1103975901158891,
+      "p_value": 0.2759501826721494
+    },
+    "wilcoxon_signed_rank_test": {
+      "statistic": 227.0,
+      "p_value": 0.9192965272814035
+    },
+    "effect_size": {
+      "name": "Cohen's dz",
+      "value": 0.202729935968616
+    },
+    "direction_counts": {
+      "Score-CAM_higher_AUC": 13,
+      "equal": 0,
+      "Score-CAM_lower_AUC": 17
+    }
+  },
+  "correctly_classified_images": {
+    "n": 29,
+    "mean_auc": {
+      "Grad-CAM": 70.86291924838362,
+      "Score-CAM": 74.84049422165444
+    },
+    "median_auc": {
+      "Grad-CAM": 76.51371002197266,
+      "Score-CAM": 78.9145736694336
+    },
+    "paired_difference": {
+      "definition": "Score-CAM minus Grad-CAM",
+      "mean": 3.9775749732708108,
+      "median": -0.13637542724609375,
+      "std": 20.27035536636839,
+      "bootstrap_95_percent_ci": {
+        "lower": -2.8661830301942492,
+        "upper": 11.687592310741028
+      }
+    },
+    "paired_t_test": {
+      "t_statistic": 1.0567104708650452,
+      "p_value": 0.2996761307301064
+    },
+    "wilcoxon_signed_rank_test": {
+      "statistic": 217.0,
+      "p_value": 1.0
+    },
+    "effect_size": {
+      "name": "Cohen's dz",
+      "value": 0.19622620824251627
+    },
+    "direction_counts": {
+      "Score-CAM_higher_AUC": 12,
+      "equal": 0,
+      "Score-CAM_lower_AUC": 17
+    }
+  },
+  "all_images_by_class": {
+    "COVID": {
+      "n": 10,
+      "mean_auc": {
+        "Grad-CAM": 85.64260206222534,
+        "Score-CAM": 88.82112464904785
+      },
+      "median_auc": {
+        "Grad-CAM": 98.80911636352539,
+        "Score-CAM": 95.80296325683594
+      },
+      "paired_difference": {
+        "definition": "Score-CAM minus Grad-CAM",
+        "mean": 3.1785225868225098,
+        "median": -0.29058837890625,
+        "std": 23.915498839756783,
+        "bootstrap_95_percent_ci": {
+          "lower": -7.229443120956421,
+          "upper": 19.204606590270995
+        }
+      },
+      "paired_t_test": {
+        "t_statistic": 0.42028690415355985,
+        "p_value": 0.6841325614583006
+      },
+      "wilcoxon_signed_rank_test": {
+        "statistic": 18.0,
+        "p_value": 0.375
+      },
+      "effect_size": {
+        "name": "Cohen's dz",
+        "value": 0.13290638878661312
+      },
+      "direction_counts": {
+        "Score-CAM_higher_AUC": 3,
+        "equal": 0,
+        "Score-CAM_lower_AUC": 7
+      }
+    },
+    "Lung_Opacity": {
+      "n": 10,
+      "mean_auc": {
+        "Grad-CAM": 58.136613607406616,
+        "Score-CAM": 66.42908420562745
+      },
+      "median_auc": {
+        "Grad-CAM": 57.50203895568848,
+        "Score-CAM": 73.92258834838867
+      },
+      "paired_difference": {
+        "definition": "Score-CAM minus Grad-CAM",
+        "mean": 8.292470598220826,
+        "median": 3.8351995944976807,
+        "std": 18.63981726009536,
+        "bootstrap_95_percent_ci": {
+          "lower": -2.08121600151062,
+          "upper": 19.265548278093338
+        }
+      },
+      "paired_t_test": {
+        "t_statistic": 1.4068321676358904,
+        "p_value": 0.19305743751547433
+      },
+      "wilcoxon_signed_rank_test": {
+        "statistic": 15.0,
+        "p_value": 0.232421875
+      },
+      "effect_size": {
+        "name": "Cohen's dz",
+        "value": 0.4448793935321232
+      },
+      "direction_counts": {
+        "Score-CAM_higher_AUC": 6,
+        "equal": 0,
+        "Score-CAM_lower_AUC": 4
+      }
+    },
+    "Normal": {
+      "n": 10,
+      "mean_auc": {
+        "Grad-CAM": 62.10759859085083,
+        "Score-CAM": 62.75210876464844
+      },
+      "median_auc": {
+        "Grad-CAM": 70.30535507202148,
+        "Score-CAM": 67.46990203857422
+      },
+      "paired_difference": {
+        "definition": "Score-CAM minus Grad-CAM",
+        "mean": 0.6445101737976074,
+        "median": -4.154518127441406,
+        "std": 18.04309419543524,
+        "bootstrap_95_percent_ci": {
+          "lower": -9.491556777954099,
+          "upper": 11.542253293991081
+        }
+      },
+      "paired_t_test": {
+        "t_statistic": 0.11295845946794657,
+        "p_value": 0.9125429612772062
+      },
+      "wilcoxon_signed_rank_test": {
+        "statistic": 26.0,
+        "p_value": 0.921875
+      },
+      "effect_size": {
+        "name": "Cohen's dz",
+        "value": 0.03572060129025228
+      },
+      "direction_counts": {
+        "Score-CAM_higher_AUC": 4,
+        "equal": 0,
+        "Score-CAM_lower_AUC": 6
+      }
+    }
+  },
+  "correctly_classified_images_by_class": {
+    "COVID": {
+      "n": 10,
+      "mean_auc": {
+        "Grad-CAM": 85.64260206222534,
+        "Score-CAM": 88.82112464904785
+      },
+      "median_auc": {
+        "Grad-CAM": 98.80911636352539,
+        "Score-CAM": 95.80296325683594
+      },
+      "paired_difference": {
+        "definition": "Score-CAM minus Grad-CAM",
+        "mean": 3.1785225868225098,
+        "median": -0.29058837890625,
+        "std": 23.915498839756783,
+        "bootstrap_95_percent_ci": {
+          "lower": -7.229443120956421,
+          "upper": 19.204606590270995
+        }
+      },
+      "paired_t_test": {
+        "t_statistic": 0.42028690415355985,
+        "p_value": 0.6841325614583006
+      },
+      "wilcoxon_signed_rank_test": {
+        "statistic": 18.0,
+        "p_value": 0.375
+      },
+      "effect_size": {
+        "name": "Cohen's dz",
+        "value": 0.13290638878661312
+      },
+      "direction_counts": {
+        "Score-CAM_higher_AUC": 3,
+        "equal": 0,
+        "Score-CAM_lower_AUC": 7
+      }
+    },
+    "Lung_Opacity": {
+      "n": 9,
+      "mean_auc": {
+        "Grad-CAM": 64.16918351915147,
+        "Score-CAM": 72.73799981011285
+      },
+      "median_auc": {
+        "Grad-CAM": 58.75921630859375,
+        "Score-CAM": 78.9145736694336
+      },
+      "paired_difference": {
+        "definition": "Score-CAM minus Grad-CAM",
+        "mean": 8.568816290961372,
+        "median": 1.8650398254394531,
+        "std": 19.748772311959915,
+        "bootstrap_95_percent_ci": {
+          "lower": -3.3878044976128443,
+          "upper": 21.14653273688422
+        }
+      },
+      "paired_t_test": {
+        "t_statistic": 1.3016732618521416,
+        "p_value": 0.22925789701343524
+      },
+      "wilcoxon_signed_rank_test": {
+        "statistic": 13.0,
+        "p_value": 0.30078125
+      },
+      "effect_size": {
+        "name": "Cohen's dz",
+        "value": 0.43389108728404713
+      },
+      "direction_counts": {
+        "Score-CAM_higher_AUC": 5,
+        "equal": 0,
+        "Score-CAM_lower_AUC": 4
+      }
+    },
+    "Normal": {
+      "n": 10,
+      "mean_auc": {
+        "Grad-CAM": 62.10759859085083,
+        "Score-CAM": 62.75210876464844
+      },
+      "median_auc": {
+        "Grad-CAM": 70.30535507202148,
+        "Score-CAM": 67.46990203857422
+      },
+      "paired_difference": {
+        "definition": "Score-CAM minus Grad-CAM",
+        "mean": 0.6445101737976074,
+        "median": -4.154518127441406,
+        "std": 18.04309419543524,
+        "bootstrap_95_percent_ci": {
+          "lower": -9.491556777954099,
+          "upper": 11.542253293991081
+        }
+      },
+      "paired_t_test": {
+        "t_statistic": 0.11295845946794657,
+        "p_value": 0.9125429612772062
+      },
+      "wilcoxon_signed_rank_test": {
+        "statistic": 26.0,
+        "p_value": 0.921875
+      },
+      "effect_size": {
+        "name": "Cohen's dz",
+        "value": 0.03572060129025228
+      },
+      "direction_counts": {
+        "Score-CAM_higher_AUC": 4,
+        "equal": 0,
+        "Score-CAM_lower_AUC": 6
+      }
+    }
+  },
+  "incorrect_predictions": [
+    {
+      "filename": "Lung_Opacity-973.png",
+      "ground_truth": "Lung_Opacity",
+      "predicted_class": "Normal",
+      "gradcam_auc": 3.843484401702881,
+      "scorecam_auc": 9.648843765258789,
+      "difference_scorecam_minus_gradcam": 5.805359363555908
+    }
+  ],
+  "paired_results": [
+    {
+      "filename": "COVID-806.png",
+      "ground_truth": "COVID",
+      "predicted_class": "COVID",
+      "correct_prediction": true,
+      "gradcam_auc": 99.89715576171875,
+      "scorecam_auc": 99.98279571533203,
+      "difference_scorecam_minus_gradcam": 0.08563995361328125
+    },
+    {
+      "filename": "COVID-826.png",
+      "ground_truth": "COVID",
+      "predicted_class": "COVID",
+      "correct_prediction": true,
+      "gradcam_auc": 99.97389221191406,
+      "scorecam_auc": 96.03240203857422,
+      "difference_scorecam_minus_gradcam": -3.9414901733398438
+    },
+    {
+      "filename": "COVID-828.png",
+      "ground_truth": "COVID",
+      "predicted_class": "COVID",
+      "correct_prediction": true,
+      "gradcam_auc": 99.99452209472656,
+      "scorecam_auc": 99.99266052246094,
+      "difference_scorecam_minus_gradcam": -0.001861572265625
+    },
+    {
+      "filename": "COVID-835.png",
+      "ground_truth": "COVID",
+      "predicted_class": "COVID",
+      "correct_prediction": true,
+      "gradcam_auc": 97.72107696533203,
+      "scorecam_auc": 90.93377685546875,
+      "difference_scorecam_minus_gradcam": -6.787300109863281
+    },
+    {
+      "filename": "COVID-857.png",
+      "ground_truth": "COVID",
+      "predicted_class": "COVID",
+      "correct_prediction": true,
+      "gradcam_auc": 96.11962890625,
+      "scorecam_auc": 95.57352447509766,
+      "difference_scorecam_minus_gradcam": -0.5461044311523438
+    },
+    {
+      "filename": "COVID-862.png",
+      "ground_truth": "COVID",
+      "predicted_class": "COVID",
+      "correct_prediction": true,
+      "gradcam_auc": 10.34882640838623,
+      "scorecam_auc": 79.09561920166016,
+      "difference_scorecam_minus_gradcam": 68.74679279327393
+    },
+    {
+      "filename": "COVID-870.png",
+      "ground_truth": "COVID",
+      "predicted_class": "COVID",
+      "correct_prediction": true,
+      "gradcam_auc": 97.56428527832031,
+      "scorecam_auc": 99.98974609375,
+      "difference_scorecam_minus_gradcam": 2.4254608154296875
+    },
+    {
+      "filename": "COVID-963.png",
+      "ground_truth": "COVID",
+      "predicted_class": "COVID",
+      "correct_prediction": true,
+      "gradcam_auc": 99.99506378173828,
+      "scorecam_auc": 99.95999145507812,
+      "difference_scorecam_minus_gradcam": -0.03507232666015625
+    },
+    {
+      "filename": "COVID-988.png",
+      "ground_truth": "COVID",
+      "predicted_class": "COVID",
+      "correct_prediction": true,
+      "gradcam_auc": 54.823875427246094,
+      "scorecam_auc": 35.350894927978516,
+      "difference_scorecam_minus_gradcam": -19.472980499267578
+    },
+    {
+      "filename": "COVID-989.png",
+      "ground_truth": "COVID",
+      "predicted_class": "COVID",
+      "correct_prediction": true,
+      "gradcam_auc": 99.9876937866211,
+      "scorecam_auc": 91.29983520507812,
+      "difference_scorecam_minus_gradcam": -8.687858581542969
+    },
+    {
+      "filename": "Lung_Opacity-807.png",
+      "ground_truth": "Lung_Opacity",
+      "predicted_class": "Lung_Opacity",
+      "correct_prediction": true,
+      "gradcam_auc": 58.75921630859375,
+      "scorecam_auc": 82.62450408935547,
+      "difference_scorecam_minus_gradcam": 23.86528778076172
+    },
+    {
+      "filename": "Lung_Opacity-808.png",
+      "ground_truth": "Lung_Opacity",
+      "predicted_class": "Lung_Opacity",
+      "correct_prediction": true,
+      "gradcam_auc": 70.02023315429688,
+      "scorecam_auc": 87.02880096435547,
+      "difference_scorecam_minus_gradcam": 17.008567810058594
+    },
+    {
+      "filename": "Lung_Opacity-822.png",
+      "ground_truth": "Lung_Opacity",
+      "predicted_class": "Lung_Opacity",
+      "correct_prediction": true,
+      "gradcam_auc": 85.37077331542969,
+      "scorecam_auc": 68.93060302734375,
+      "difference_scorecam_minus_gradcam": -16.440170288085938
+    },
+    {
+      "filename": "Lung_Opacity-823.png",
+      "ground_truth": "Lung_Opacity",
+      "predicted_class": "Lung_Opacity",
+      "correct_prediction": true,
+      "gradcam_auc": 45.51338195800781,
+      "scorecam_auc": 89.37466430664062,
+      "difference_scorecam_minus_gradcam": 43.86128234863281
+    },
+    {
+      "filename": "Lung_Opacity-855.png",
+      "ground_truth": "Lung_Opacity",
+      "predicted_class": "Lung_Opacity",
+      "correct_prediction": true,
+      "gradcam_auc": 81.7334976196289,
+      "scorecam_auc": 78.9145736694336,
+      "difference_scorecam_minus_gradcam": -2.8189239501953125
+    },
+    {
+      "filename": "Lung_Opacity-908.png",
+      "ground_truth": "Lung_Opacity",
+      "predicted_class": "Lung_Opacity",
+      "correct_prediction": true,
+      "gradcam_auc": 35.14987564086914,
+      "scorecam_auc": 58.37472915649414,
+      "difference_scorecam_minus_gradcam": 23.224853515625
+    },
+    {
+      "filename": "Lung_Opacity-939.png",
+      "ground_truth": "Lung_Opacity",
+      "predicted_class": "Lung_Opacity",
+      "correct_prediction": true,
+      "gradcam_auc": 49.78911590576172,
+      "scorecam_auc": 51.65415573120117,
+      "difference_scorecam_minus_gradcam": 1.8650398254394531
+    },
+    {
+      "filename": "Lung_Opacity-951.png",
+      "ground_truth": "Lung_Opacity",
+      "predicted_class": "Lung_Opacity",
+      "correct_prediction": true,
+      "gradcam_auc": 56.2448616027832,
+      "scorecam_auc": 42.93464660644531,
+      "difference_scorecam_minus_gradcam": -13.31021499633789
+    },
+    {
+      "filename": "Lung_Opacity-973.png",
+      "ground_truth": "Lung_Opacity",
+      "predicted_class": "Normal",
+      "correct_prediction": false,
+      "gradcam_auc": 3.843484401702881,
+      "scorecam_auc": 9.648843765258789,
+      "difference_scorecam_minus_gradcam": 5.805359363555908
+    },
+    {
+      "filename": "Lung_Opacity-989.png",
+      "ground_truth": "Lung_Opacity",
+      "predicted_class": "Lung_Opacity",
+      "correct_prediction": true,
+      "gradcam_auc": 94.94169616699219,
+      "scorecam_auc": 94.8053207397461,
+      "difference_scorecam_minus_gradcam": -0.13637542724609375
+    },
+    {
+      "filename": "Normal-806.png",
+      "ground_truth": "Normal",
+      "predicted_class": "Normal",
+      "correct_prediction": true,
+      "gradcam_auc": 50.463584899902344,
+      "scorecam_auc": 65.02503967285156,
+      "difference_scorecam_minus_gradcam": 14.561454772949219
+    },
+    {
+      "filename": "Normal-850.png",
+      "ground_truth": "Normal",
+      "predicted_class": "Normal",
+      "correct_prediction": true,
+      "gradcam_auc": 69.24884796142578,
+      "scorecam_auc": 64.6556396484375,
+      "difference_scorecam_minus_gradcam": -4.593208312988281
+    },
+    {
+      "filename": "Normal-859.png",
+      "ground_truth": "Normal",
+      "predicted_class": "Normal",
+      "correct_prediction": true,
+      "gradcam_auc": 13.005230903625488,
+      "scorecam_auc": 50.351314544677734,
+      "difference_scorecam_minus_gradcam": 37.346083641052246
+    },
+    {
+      "filename": "Normal-929.png",
+      "ground_truth": "Normal",
+      "predicted_class": "Normal",
+      "correct_prediction": true,
+      "gradcam_auc": 83.54427337646484,
+      "scorecam_auc": 77.35711669921875,
+      "difference_scorecam_minus_gradcam": -6.187156677246094
+    },
+    {
+      "filename": "Normal-939.png",
+      "ground_truth": "Normal",
+      "predicted_class": "Normal",
+      "correct_prediction": true,
+      "gradcam_auc": 81.67185974121094,
+      "scorecam_auc": 73.63640594482422,
+      "difference_scorecam_minus_gradcam": -8.035453796386719
+    },
+    {
+      "filename": "Normal-943.png",
+      "ground_truth": "Normal",
+      "predicted_class": "Normal",
+      "correct_prediction": true,
+      "gradcam_auc": 71.36186218261719,
+      "scorecam_auc": 73.0380859375,
+      "difference_scorecam_minus_gradcam": 1.6762237548828125
+    },
+    {
+      "filename": "Normal-954.png",
+      "ground_truth": "Normal",
+      "predicted_class": "Normal",
+      "correct_prediction": true,
+      "gradcam_auc": 84.38202667236328,
+      "scorecam_auc": 80.66619873046875,
+      "difference_scorecam_minus_gradcam": -3.7158279418945312
+    },
+    {
+      "filename": "Normal-966.png",
+      "ground_truth": "Normal",
+      "predicted_class": "Normal",
+      "correct_prediction": true,
+      "gradcam_auc": 76.51371002197266,
+      "scorecam_auc": 69.91476440429688,
+      "difference_scorecam_minus_gradcam": -6.598945617675781
+    },
+    {
+      "filename": "Normal-979.png",
+      "ground_truth": "Normal",
+      "predicted_class": "Normal",
+      "correct_prediction": true,
+      "gradcam_auc": 47.63284683227539,
+      "scorecam_auc": 16.480316162109375,
+      "difference_scorecam_minus_gradcam": -31.152530670166016
+    },
+    {
+      "filename": "Normal-983.png",
+      "ground_truth": "Normal",
+      "predicted_class": "Normal",
+      "correct_prediction": true,
+      "gradcam_auc": 43.25174331665039,
+      "scorecam_auc": 56.39620590209961,
+      "difference_scorecam_minus_gradcam": 13.144462585449219
+    }
+  ]
+}

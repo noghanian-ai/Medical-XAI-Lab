@@ -1,0 +1,246 @@
+{
+    "total_images": 30,
+    "target_layer": "conv5_block3_3_conv",
+    "metadata": [
+        {
+            "class_name": "COVID",
+            "filename": "COVID-806.png",
+            "relative_path": "COVID\\COVID-806.png",
+            "predicted_class": "COVID",
+            "predicted_class_index": 0,
+            "confidence": 0.9999833106994629
+        },
+        {
+            "class_name": "COVID",
+            "filename": "COVID-826.png",
+            "relative_path": "COVID\\COVID-826.png",
+            "predicted_class": "COVID",
+            "predicted_class_index": 0,
+            "confidence": 0.9995582699775696
+        },
+        {
+            "class_name": "COVID",
+            "filename": "COVID-828.png",
+            "relative_path": "COVID\\COVID-828.png",
+            "predicted_class": "COVID",
+            "predicted_class_index": 0,
+            "confidence": 0.9999985694885254
+        },
+        {
+            "class_name": "COVID",
+            "filename": "COVID-835.png",
+            "relative_path": "COVID\\COVID-835.png",
+            "predicted_class": "COVID",
+            "predicted_class_index": 0,
+            "confidence": 0.7982788681983948
+        },
+        {
+            "class_name": "COVID",
+            "filename": "COVID-857.png",
+            "relative_path": "COVID\\COVID-857.png",
+            "predicted_class": "COVID",
+            "predicted_class_index": 0,
+            "confidence": 0.9979895353317261
+        },
+        {
+            "class_name": "COVID",
+            "filename": "COVID-862.png",
+            "relative_path": "COVID\\COVID-862.png",
+            "predicted_class": "Lung_Opacity",
+            "predicted_class_index": 1,
+            "confidence": 0.7066088914871216
+        },
+        {
+            "class_name": "COVID",
+            "filename": "COVID-870.png",
+            "relative_path": "COVID\\COVID-870.png",
+            "predicted_class": "COVID",
+            "predicted_class_index": 0,
+            "confidence": 0.9999877214431763
+        },
+        {
+            "class_name": "COVID",
+            "filename": "COVID-963.png",
+            "relative_path": "COVID\\COVID-963.png",
+            "predicted_class": "COVID",
+            "predicted_class_index": 0,
+            "confidence": 0.9999916553497314
+        },
+        {
+            "class_name": "COVID",
+            "filename": "COVID-988.png",
+            "relative_path": "COVID\\COVID-988.png",
+            "predicted_class": "Lung_Opacity",
+            "predicted_class_index": 1,
+            "confidence": 0.701000988483429
+        },
+        {
+            "class_name": "COVID",
+            "filename": "COVID-989.png",
+            "relative_path": "COVID\\COVID-989.png",
+            "predicted_class": "COVID",
+            "predicted_class_index": 0,
+            "confidence": 0.999516487121582
+        },
+        {
+            "class_name": "Lung_Opacity",
+            "filename": "Lung_Opacity-807.png",
+            "relative_path": "Lung_Opacity\\Lung_Opacity-807.png",
+            "predicted_class": "Lung_Opacity",
+            "predicted_class_index": 1,
+            "confidence": 0.9999723434448242
+        },
+        {
+            "class_name": "Lung_Opacity",
+            "filename": "Lung_Opacity-808.png",
+            "relative_path": "Lung_Opacity\\Lung_Opacity-808.png",
+            "predicted_class": "Lung_Opacity",
+            "predicted_class_index": 1,
+            "confidence": 0.9977042078971863
+        },
+        {
+            "class_name": "Lung_Opacity",
+            "filename": "Lung_Opacity-822.png",
+            "relative_path": "Lung_Opacity\\Lung_Opacity-822.png",
+            "predicted_class": "Lung_Opacity",
+            "predicted_class_index": 1,
+            "confidence": 0.8606975674629211
+        },
+        {
+            "class_name": "Lung_Opacity",
+            "filename": "Lung_Opacity-823.png",
+            "relative_path": "Lung_Opacity\\Lung_Opacity-823.png",
+            "predicted_class": "Lung_Opacity",
+            "predicted_class_index": 1,
+            "confidence": 1.0
+        },
+        {
+            "class_name": "Lung_Opacity",
+            "filename": "Lung_Opacity-855.png",
+            "relative_path": "Lung_Opacity\\Lung_Opacity-855.png",
+            "predicted_class": "Lung_Opacity",
+            "predicted_class_index": 1,
+            "confidence": 1.0
+        },
+        {
+            "class_name": "Lung_Opacity",
+            "filename": "Lung_Opacity-908.png",
+            "relative_path": "Lung_Opacity\\Lung_Opacity-908.png",
+            "predicted_class": "Lung_Opacity",
+            "predicted_class_index": 1,
+            "confidence": 0.9995298385620117
+        },
+        {
+            "class_name": "Lung_Opacity",
+            "filename": "Lung_Opacity-939.png",
+            "relative_path": "Lung_Opacity\\Lung_Opacity-939.png",
+            "predicted_class": "Lung_Opacity",
+            "predicted_class_index": 1,
+            "confidence": 0.999995231628418
+        },
+        {
+            "class_name": "Lung_Opacity",
+            "filename": "Lung_Opacity-951.png",
+            "relative_path": "Lung_Opacity\\Lung_Opacity-951.png",
+            "predicted_class": "Lung_Opacity",
+            "predicted_class_index": 1,
+            "confidence": 0.9999996423721313
+        },
+        {
+            "class_name": "Lung_Opacity",
+            "filename": "Lung_Opacity-973.png",
+            "relative_path": "Lung_Opacity\\Lung_Opacity-973.png",
+            "predicted_class": "Lung_Opacity",
+            "predicted_class_index": 1,
+            "confidence": 0.9091646671295166
+        },
+        {
+            "class_name": "Lung_Opacity",
+            "filename": "Lung_Opacity-989.png",
+            "relative_path": "Lung_Opacity\\Lung_Opacity-989.png",
+            "predicted_class": "Lung_Opacity",
+            "predicted_class_index": 1,
+            "confidence": 0.9999995231628418
+        },
+        {
+            "class_name": "Normal",
+            "filename": "Normal-806.png",
+            "relative_path": "Normal\\Normal-806.png",
+            "predicted_class": "Normal",
+            "predicted_class_index": 2,
+            "confidence": 1.0
+        },
+        {
+            "class_name": "Normal",
+            "filename": "Normal-850.png",
+            "relative_path": "Normal\\Normal-850.png",
+            "predicted_class": "Normal",
+            "predicted_class_index": 2,
+            "confidence": 1.0
+        },
+        {
+            "class_name": "Normal",
+            "filename": "Normal-859.png",
+            "relative_path": "Normal\\Normal-859.png",
+            "predicted_class": "Normal",
+            "predicted_class_index": 2,
+            "confidence": 0.9730066061019897
+        },
+        {
+            "class_name": "Normal",
+            "filename": "Normal-929.png",
+            "relative_path": "Normal\\Normal-929.png",
+            "predicted_class": "Normal",
+            "predicted_class_index": 2,
+            "confidence": 0.9999996423721313
+        },
+        {
+            "class_name": "Normal",
+            "filename": "Normal-939.png",
+            "relative_path": "Normal\\Normal-939.png",
+            "predicted_class": "Normal",
+            "predicted_class_index": 2,
+            "confidence": 1.0
+        },
+        {
+            "class_name": "Normal",
+            "filename": "Normal-943.png",
+            "relative_path": "Normal\\Normal-943.png",
+            "predicted_class": "Normal",
+            "predicted_class_index": 2,
+            "confidence": 1.0
+        },
+        {
+            "class_name": "Normal",
+            "filename": "Normal-954.png",
+            "relative_path": "Normal\\Normal-954.png",
+            "predicted_class": "Normal",
+            "predicted_class_index": 2,
+            "confidence": 0.9999945163726807
+        },
+        {
+            "class_name": "Normal",
+            "filename": "Normal-966.png",
+            "relative_path": "Normal\\Normal-966.png",
+            "predicted_class": "Normal",
+            "predicted_class_index": 2,
+            "confidence": 1.0
+        },
+        {
+            "class_name": "Normal",
+            "filename": "Normal-979.png",
+            "relative_path": "Normal\\Normal-979.png",
+            "predicted_class": "Normal",
+            "predicted_class_index": 2,
+            "confidence": 0.9967432618141174
+        },
+        {
+            "class_name": "Normal",
+            "filename": "Normal-983.png",
+            "relative_path": "Normal\\Normal-983.png",
+            "predicted_class": "Normal",
+            "predicted_class_index": 2,
+            "confidence": 1.0
+        }
+    ]
+}

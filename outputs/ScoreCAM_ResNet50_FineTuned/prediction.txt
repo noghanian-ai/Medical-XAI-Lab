@@ -1,0 +1,13 @@
+Model: ResNet50 Fine-Tuned
+Image: images/Lung_Opacity/Lung_Opacity-1000.png
+Target Layer: conv5_block3_3_conv
+Explainability Method: Score-CAM
+Batch Size: 8
+
+Predicted Class: Lung_Opacity
+Confidence: 100.00%
+
+Class Probabilities:
+COVID: 0.00%
+Lung_Opacity: 100.00%
+Normal: 0.00%

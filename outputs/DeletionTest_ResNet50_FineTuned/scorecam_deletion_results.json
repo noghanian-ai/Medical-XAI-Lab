@@ -1,0 +1,68 @@
+[
+    {
+        "deletion_percentage": 0,
+        "remaining_percentage": 100,
+        "target_class": "Lung_Opacity",
+        "target_confidence": 0.9999998807907104
+    },
+    {
+        "deletion_percentage": 10,
+        "remaining_percentage": 90,
+        "target_class": "Lung_Opacity",
+        "target_confidence": 0.9999988079071045
+    },
+    {
+        "deletion_percentage": 20,
+        "remaining_percentage": 80,
+        "target_class": "Lung_Opacity",
+        "target_confidence": 0.9999969005584717
+    },
+    {
+        "deletion_percentage": 30,
+        "remaining_percentage": 70,
+        "target_class": "Lung_Opacity",
+        "target_confidence": 0.9997387528419495
+    },
+    {
+        "deletion_percentage": 40,
+        "remaining_percentage": 60,
+        "target_class": "Lung_Opacity",
+        "target_confidence": 0.9987694621086121
+    },
+    {
+        "deletion_percentage": 50,
+        "remaining_percentage": 50,
+        "target_class": "Lung_Opacity",
+        "target_confidence": 0.9996343851089478
+    },
+    {
+        "deletion_percentage": 60,
+        "remaining_percentage": 40,
+        "target_class": "Lung_Opacity",
+        "target_confidence": 0.9771534204483032
+    },
+    {
+        "deletion_percentage": 70,
+        "remaining_percentage": 30,
+        "target_class": "Lung_Opacity",
+        "target_confidence": 0.10974607616662979
+    },
+    {
+        "deletion_percentage": 80,
+        "remaining_percentage": 20,
+        "target_class": "Lung_Opacity",
+        "target_confidence": 0.0005050406325608492
+    },
+    {
+        "deletion_percentage": 90,
+        "remaining_percentage": 10,
+        "target_class": "Lung_Opacity",
+        "target_confidence": 0.0009201601496897638
+    },
+    {
+        "deletion_percentage": 100,
+        "remaining_percentage": 0,
+        "target_class": "Lung_Opacity",
+        "target_confidence": 0.0003298470110166818
+    }
+]

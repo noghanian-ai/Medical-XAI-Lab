@@ -17,3 +17,8 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+# Raw XAI evaluation maps
+outputs/XAI_Evaluation_Dataset/Raw_XAI_Maps/
+
+# Raw single-image XAI maps
+outputs/Raw_XAI_Maps_ResNet50_FineTuned/*.npy

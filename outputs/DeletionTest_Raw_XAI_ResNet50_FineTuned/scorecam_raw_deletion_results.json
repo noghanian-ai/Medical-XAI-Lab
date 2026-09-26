@@ -1,0 +1,62 @@
+{
+    "method": "Score-CAM",
+    "target_class": "Lung_Opacity",
+    "results": [
+        {
+            "masked_percentage": 0,
+            "target_class": "Lung_Opacity",
+            "confidence": 0.9999997615814209
+        },
+        {
+            "masked_percentage": 10,
+            "target_class": "Lung_Opacity",
+            "confidence": 0.9999998807907104
+        },
+        {
+            "masked_percentage": 20,
+            "target_class": "Lung_Opacity",
+            "confidence": 0.9999271631240845
+        },
+        {
+            "masked_percentage": 30,
+            "target_class": "Lung_Opacity",
+            "confidence": 0.9989538192749023
+        },
+        {
+            "masked_percentage": 40,
+            "target_class": "Lung_Opacity",
+            "confidence": 0.9999978542327881
+        },
+        {
+            "masked_percentage": 50,
+            "target_class": "Lung_Opacity",
+            "confidence": 0.9999862909317017
+        },
+        {
+            "masked_percentage": 60,
+            "target_class": "Lung_Opacity",
+            "confidence": 0.9996973276138306
+        },
+        {
+            "masked_percentage": 70,
+            "target_class": "Lung_Opacity",
+            "confidence": 0.46934956312179565
+        },
+        {
+            "masked_percentage": 80,
+            "target_class": "Lung_Opacity",
+            "confidence": 0.9932392835617065
+        },
+        {
+            "masked_percentage": 90,
+            "target_class": "Lung_Opacity",
+            "confidence": 0.9995115995407104
+        },
+        {
+            "masked_percentage": 100,
+            "target_class": "Lung_Opacity",
+            "confidence": 0.0005485477740876377
+        }
+    ],
+    "auc": 89.60935974121094
+}
